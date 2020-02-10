@@ -3,7 +3,7 @@ const parseStringAsArray = require('../utils/parseStringAsArray')
 
 module.exports = {
     async index(request, response){
-        const { latitude, longitude, techs} = request.query;
+        const { techs} = request.query;
 
         const techsArray = parseStringAsArray(techs)
         
@@ -11,7 +11,7 @@ module.exports = {
             techs: {
                 $in: techsArray,//$in é um operator do mongo
             },
-            location:{
+           /* location:{
                 $near: {//encontrar valores perto,nesse caso para calcular a distância
                     $geometry:{
                         type: 'Point',
@@ -19,7 +19,7 @@ module.exports = {
                     },
                     //maxDistance: 10000,
                 },
-            },
+            },*/
         })
 
         return response.json({devs})
