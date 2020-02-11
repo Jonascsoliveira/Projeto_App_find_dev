@@ -11,15 +11,15 @@ module.exports = {
             techs: {
                 $in: techsArray,//$in é um operator do mongo
             },
-           /* location:{
+            location:{
                 $near: {//encontrar valores perto,nesse caso para calcular a distância
                     $geometry:{
                         type: 'Point',
                         coordinate: [longitude, latitude],
                     },
-                    //maxDistance: 10000,
+                    maxDistance: 10000,
                 },
-            },*/
+            },
         })
 
         return response.json({devs})
