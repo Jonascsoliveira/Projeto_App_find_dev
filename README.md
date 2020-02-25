@@ -13,8 +13,10 @@ e pode-se consulta-los pelo app Mobile. Este projeto foi desenvolvido durante a 
 
 OBS: O **NodeJS v13.7.0** e o gerenciador de pacotes **yarn 1.22.0** deve estar instalados,caso não estejam pode ser instalados a partir dos Links: [NodeJS](https://nodejs.org/en/) escolha a opção other Downloads para instalar a versão correta, [yarn](https://yarnpkg.com/getting-started/install).
 
-Para iniciar o Backend da aplicação usa-se o comando "yarn dev"
-Para iniciar a interface web da aplicação usa-se o comando "yarn start"
-Para iniciar o app mobile da aplicação usa-se o comando "expo start"
+Para iniciar o Backend da aplicação usa-se o comando "yarn dev".
+
+Para iniciar a interface web da aplicação usa-se o comando "yarn start".
+
+Para iniciar o app mobile da aplicação usa-se o comando "expo start".
 
 
